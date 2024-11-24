@@ -68,6 +68,9 @@ case $choice in
         echo "PATH=\$PATH:$(pwd)" >> ~/.bash_profile
         source ~/.bash_profile
 
+        cd ..
+        chmod -R 777 multipleforlinux
+
         # Запуск ноды
         echo -e "${BLUE}Запускаем multiple-node...${NC}"
         nohup ./multiple-node > output.log 2>&1 &
