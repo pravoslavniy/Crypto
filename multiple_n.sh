@@ -17,7 +17,7 @@ fi
 sleep 1
 
 # Отображаем логотип
-curl -s https://raw.githubusercontent.com/noxuspace/cryptofortochka/main/logo_forto.sh | bash
+curl -s https://raw.githubusercontent.com/noxuspace/pravoslavniy/main/sadchain.sh | bash
 
 # Меню
 echo -e "${YELLOW}Выберите действие:${NC}"
@@ -88,8 +88,8 @@ case $choice in
         echo -e "${YELLOW}Команда для проверки статуса ноды:${NC}"
         echo "cd ~/multipleforlinux && ./multiple-cli status"
         echo -e "${PURPLE}-----------------------------------------------------------------------${NC}"
-        echo -e "${GREEN}CRYPTO FORTOCHKA — вся крипта в одном месте!${NC}"
-        echo -e "${CYAN}Наш Telegram https://t.me/cryptoforto${NC}"
+        echo -e "${GREEN}SAD CHAIN — вся крипта в одном месте!${NC}"
+        echo -e "${CYAN}Наш Telegram https://t.me/sadchain${NC}"
         sleep 2
         cd ~/multipleforlinux && ./multiple-cli status
         ;;
@@ -114,8 +114,8 @@ case $choice in
 
         # Завершающий вывод
         echo -e "${PURPLE}-----------------------------------------------------------------------${NC}"
-        echo -e "${GREEN}CRYPTO FORTOCHKA — вся крипта в одном месте!${NC}"
-        echo -e "${CYAN}Наш Telegram https://t.me/cryptoforto${NC}"
+        echo -e "${GREEN}SAD CHAIN — вся крипта в одном месте!${NC}"
+        echo -e "${CYAN}Наш Telegram https://t.me/sadchain${NC}"
         sleep 1
         ;;
         
