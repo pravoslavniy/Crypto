@@ -83,6 +83,7 @@ case $choice in
 
         # Привязка аккаунта
         echo -e "${BLUE}Привязываем аккаунт с ID: $IDENTIFIER и PIN: $PIN...${NC}"
+        cd multipleforlinux
         ./multiple-cli bind --bandwidth-download 100 --identifier $IDENTIFIER --pin $PIN --storage 200 --bandwidth-upload 100
 
         # Заключительный вывод
