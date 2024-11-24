@@ -17,7 +17,7 @@ fi
 sleep 1
 
 # Отображаем логотип
-curl -s https://raw.githubusercontent.com/noxuspace/pravoslavniy/main/sadchain.sh | bash
+curl -s https://raw.githubusercontent.com/pravoslavniy/Crypto/main/sadchain.sh | bash
 
 # Меню
 echo -e "${YELLOW}Выберите действие:${NC}"
