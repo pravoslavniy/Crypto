@@ -68,9 +68,6 @@ case $choice in
         echo "PATH=\$PATH:$(pwd)" >> ~/.bash_profile
         source ~/.bash_profile
 
-        cd ..
-        chmod -R 777 multipleforlinux
-
         # Запуск ноды
         echo -e "${BLUE}Запускаем multiple-node...${NC}"
         nohup ./multiple-node > output.log 2>&1 &
@@ -83,7 +80,6 @@ case $choice in
 
         # Привязка аккаунта
         echo -e "${BLUE}Привязываем аккаунт с ID: $IDENTIFIER и PIN: $PIN...${NC}"
-        cd multipleforlinux
         ./multiple-cli bind --bandwidth-download 100 --identifier $IDENTIFIER --pin $PIN --storage 200 --bandwidth-upload 100
 
         # Заключительный вывод
@@ -95,7 +91,7 @@ case $choice in
         echo -e "${GREEN}SAD CHAIN — вся крипта в одном месте!${NC}"
         echo -e "${CYAN}Наш Telegram https://t.me/sadchain${NC}"
         sleep 2
-        ./multiple-cli status
+        cd ~/multipleforlinux && ./multiple-cli status
         ;;
 
     2)
