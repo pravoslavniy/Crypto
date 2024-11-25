@@ -95,7 +95,7 @@ case $choice in
         echo -e "${GREEN}SAD CHAIN — вся крипта в одном месте!${NC}"
         echo -e "${CYAN}Наш Telegram https://t.me/sadchain${NC}"
         sleep 2
-        cd ~/multipleforlinux && ./multiple-cli status
+        ./multiple-cli status
         ;;
 
     2)
